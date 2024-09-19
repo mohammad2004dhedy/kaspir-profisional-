@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaspir</title>
+    <!-- normalize css -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- font awesom -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- kaspir css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="timeLine">
+    </div>
+    <div class="up">^</div>
+    <header>
+        <div class="container">
+            <a href="#" class=".logo">
+                <img src="images/logo.png" alt="">
+            </a>
+            <nav>
+                <i class="fas fa-bars toggler-menu"></i>
+                <ul>
+                    <li><a href="#home" class="active">home</a></li>
+                    <li><a href="#services">services</a></li>
+                    <li><a href="#portfolio">portfolio</a></li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#pricing">pricing</a></li>
+                    <li><a href="#contact">contact</a></li>
+                </ul>
+                <form action="#">
+                    <i class="fas fa-search"></i>
+                </form>
+            </nav>
+        </div>
+    </header>
+    <section class="landing" id="home">
+        <img src="./images/landing.jpg" alt="" class="slide active">
+        <img src="./images/landing.jpg" alt="" class="slide">
+        <img src="./images/landing.jpg" alt="" class="slide">
+        <div class="overlay"></div>
+        <div class="text">
+            <div class="content">
+                <h2>Hello World!<br>
+                    We Are Kasper We Make Art.</h2>
+                    <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur aliquet quam. Accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt.</p>
+            </div>
+        </div>
+        <i class="fas fa-angle-left fa-2x prev"></i>
+        <i class="fas fa-angle-right fa-2x next"></i>
+        <ul class="builts">
+            <li class="active" data-target="0"></li>
+            <li data-target="1"></li>
+            <li data-target="2"></li>
+        </ul>
+    </section>
+    <section class="services" id="services">
+        <div class="container">
+            <div class="sectionHeader">
+                <h2>Services</h2>
+                <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt.</p>
+            </div>
+            <div class="services-container">
+                <div class="box">
+                    <i class="fas fa-database fa-3x"></i>
+                    <div class="text">
+                        <h3>DataBase Systems</h3>
+                        <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur aliquet quam.</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <i class="fas fa-code fa-3x"></i>
+                    <div class="text">
+                        <h3>Front-end development</h3>
+                        <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur aliquet quam.</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <i class="fas fa-brain fa-3x"></i>
+                    <div class="text">
+                        <h3>Brain Storming</h3>
+                        <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur aliquet quam.</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <i class="fab fa-figma fa-3x"></i>
+                    <div class="text">
+                        <h3>UI/UX Design</h3>
+                        <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur aliquet quam.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="design">
+         <div class="image">
+            <img src="./images/mobile.png" alt="design image">
+         </div>
+   <div class="text">
+    <h2>Our Design Comes With...</h2>
+    <ul>
+        <li>Responsive Design</li>
+        <li>Modern And Clean Design</li>
+        <li>Clean Code</li>
+        <li>Browser Friendly</li>
+    </ul>
+   </div>
+    </section>
+    <div class="portfolio" id="portfolio">
+        <div class="container">
+            <div class="sectionHeader">
+                <h2>PortFolio</h2>
+                <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt.</p>
+            </div>
+                <ul class="shuffle">
+                    <li class="active" data-reference="all">All</li>
+                    <li data-reference="app">App</li>
+                    <li data-reference="photo">Photo</li>
+                    <li data-reference="web">web</li>
+                    <li data-reference="print">print</li>
+                </ul>
+        </div>
+        <div class="gallery">
+            <div class="box active" data-reference="app">
+                <img src="./images/shuffle-01.jpg" alt="shuffle image">
+                <div class="info">
+                    <h4>app 3 design</h4>
+                    <p>this is some info about app design</p>
+                </div>
+            </div>
+            <div class="box active" data-reference="web">
+                <img src="./images/shuffle-02.jpg" alt="shuffle image">
+                <div class="info">
+                    <h4>web 3 design</h4>
+                    <p>this is some info about web design</p>
+                </div>
+            </div>
+            <div class="box active" data-reference="app">
+                <img src="./images/shuffle-03.jpg" alt="shuffle image">
+                <div class="info">
+                    <h4>app 3 design</h4>
+                    <p>this is some info about app design</p>
+                </div>
+            </div>
+            <div class="box active" data-reference="print">
+                <img src="./images/shuffle-04.jpg" alt="shuffle image">
+                <div class="info">
+                    <h4>print 3 design</h4>
+                    <p>this is some info about app design</p>
+                </div>
+            </div>
+            <div class="box active" data-reference="photo">
+                <img src="./images/shuffle-05.jpg" alt="shuffle image">
+                <div class="info">
+                    <h4>photo 3 design</h4>
+                    <p>this is some info about photo design</p>
+                </div>
+            </div>
+            <div class="box active" data-reference="web">
+                <img src="./images/shuffle-06.jpg" alt="shuffle image">
+                <div class="info">
+                    <h4>web 3 design</h4>
+                    <p>this is some info about web design</p>
+                </div>
+            </div>
+            <div class="box active" data-reference="print">
+                <img src="./images/shuffle-07.jpg" alt="shuffle image">
+                <div class="info">
+                    <h4>print 3 design</h4>
+                    <p>this is some info about print design</p>
+                </div>
+            </div>
+            <div class="box active" data-reference="photo">
+                <img src="./images/shuffle-08.jpg" alt="shuffle image">
+                <div class="info">
+                    <h4>photo 3 design</h4>
+                    <p>this is some info about photo design</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="video">
+        <video src="./images/video.mp4" type="video/mp4" autoplay muted loop>
+        sorry, your browser does not support this video ,NIGGA :(
+        </video>
+        <div class="text">
+            <h3>our designs is what you need</h3>
+            <p>you can have any thing with us</p>
+            <button>take advantage</button>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="container">
+            <div class="sectionHeader">
+                <h2>About</h2>
+                <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt.</p>
+            </div>
+            <img src="./images/about.png" alt="">
+        </div>
+    </section>
+    <section class="stats" id="stats">
+        <div class="container">
+            <div class="box">
+                <i class="fas fa-mug-hot"></i>
+                <div class="number" data-goal="1280">0</div>
+                <p>coffe drinks</p>
+            </div>
+            <div class="box">
+                <i class="far fa-envelope"></i>
+                <div class="number" data-goal="998">0</div>
+                <p>coffe drinks</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-trophy"></i>
+                <div class="number" data-goal="1800">0</div>
+                <p>coffe drinks</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-folder"></i>
+                <div class="number" data-goal="650">0</div>
+                <p>coffe drinks</p>
+            </div>
+        </div>
+    </section>
+    <section class="ourSkills" id="skills">
+        <div class="container">
+            <div class="testimonials">
+                <h3>testimonials</h3>
+                <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt.</p>
+                <div class="box">
+                <img src="./images/skills-01.jpg" alt="">
+                <div class="text">
+                    porttitor at sem. porttitor at sem. Mauris blandit aliquet elit, eget tincidunt.
+                    <p>CEO.john</p>
+                </div>
+                </div>
+                <div class="box">
+                <img src="./images/skills-02.jpg" alt="">
+                <div class="text">
+                    porttitor at sem. porttitor at sem. Mauris blandit aliquet elit, eget tincidunt.
+                    <p>CEO.john</p>
+                </div>
+                </div>
+                <div class="box">
+                <img src="./images/skills-01.jpg" alt="">
+                <div class="text">
+                    porttitor at sem. porttitor at sem. Mauris blandit aliquet elit, eget tincidunt.
+                    <p>CEO.john</p>
+                </div>
+                </div>
+            
+            </div>
+            <div class="skills">
+            <h3>skills</h3>
+            <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt.</p>
+             <div class="prog-holder">
+                <h4>html</h4>
+                <div class="prog">
+                    <span data-width="80%"></span>
+                </div>
+             </div>
+             <div class="prog-holder">
+                <h4>css</h4>
+                <div class="prog">
+                    <span data-width="70%"></span>
+                </div>
+             </div>
+             <div class="prog-holder">
+                <h4>javaScript</h4>
+                <div class="prog">
+                    <span data-width="50%"></span>
+                </div>
+             </div>
+             <div class="prog-holder">
+                <h4>bootstrab</h4>
+                <div class="prog">
+                    <span data-width="65%"></span>
+                </div>
+             </div>
+             <div class="prog-holder">
+                <h4>MySql</h4>
+                <div class="prog">
+                    <span data-width="30%"></span>
+                </div>
+             </div>
+             <div class="prog-holder">
+                <h4>c++</h4>
+                <div class="prog">
+                    <span data-width="10%"></span>
+                </div>
+             </div>
+            </div>
+        </div>
+    </section>
+    <section class="quto">
+        <div class="container">
+            <q>stay with allah , pray , fast and be kind to people , our goodness is all what we have in this finit world</q>
+            <span>Mohmmaed dhedy</span>
+        </div>
+    </section>
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <div class="sectionHeader">
+                <h2>pricing</h2>
+                <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt.</p>
+            </div>
+            <div class="plans">
+                <div class="plan">
+                    <div class="head">
+                        <h4>free</h4>
+                        <span><sup style="font-size:30px; margin-right:10px;">$</sup>00<sub style="font-size:20px; margin-left:10px;">/mo</sub></span>
+                    </div>
+                    <ul>
+                        <li>feuture No 1</li>
+                        <li>feuture No 2</li>
+                        <li>feuture No 3</li>
+                        <li>feuture No 4</li>
+                    </ul>
+                    <div class="foot">
+                        <a href="#"><span>Buy now</span></a>
+                    </div>
+                </div>
+                <div class="plan">
+                    <div class="head">
+                        <h4>Basic</h4>
+                        <span><sup style="font-size:30px; margin-right:10px;">$</sup>180<sub style="font-size:20px; margin-left:10px;">/mo</sub></span>
+                    </div>
+                    <ul>
+                        <li>feuture No 1</li>
+                        <li>feuture No 2</li>
+                        <li>feuture No 3</li>
+                        <li>feuture No 4</li>
+                    </ul>
+                    <div class="foot">
+                        <a href="#"><span>Buy now</span></a>
+                    </div>
+                </div>
+                <div class="plan">
+                    <div class="head">
+                        <h4>premuim</h4>
+                        <span><sup style="font-size:30px; margin-right:10px;">$</sup>240<sub style="font-size:20px; margin-left:10px;">/mo</sub></span>
+                    </div>
+                    <ul>
+                        <li>feuture No 1</li>
+                        <li>feuture No 2</li>
+                        <li>feuture No 3</li>
+                        <li>feuture No 4</li>
+                    </ul>
+                    <div class="foot">
+                        <a href="#"><span>Buy now</span></a>
+                    </div>
+                </div>
+                <div class="plan">
+                    <div class="head">
+                        <h4>platinum</h4>
+                        <span><sup style="font-size:30px; margin-right:10px;">$</sup>350<sub style="font-size:20px; margin-left:10px;">/mo</sub></span>
+                    </div>
+                    <ul>
+                        <li>feuture No 1</li>
+                        <li>feuture No 2</li>
+                        <li>feuture No 3</li>
+                        <li>feuture No 4</li>
+                    </ul>
+                    <div class="foot">
+                        <a href="#"><span>Buy now</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="contact">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste ullam nam est porro minus vitae sit dolor ea dolores unde rem cum, inventore debitis recusandae eos facilis tempora,
+            </div>
+                <a class="contact-link" href="" data-text="contact us">
+                    <span>contact us</span>
+                </a>
+        </div>
+    </section>
+    <section class="subscribe">
+        <div class="container">
+            <form action="#" method="post">
+                <i class="fas fa-envelope"></i>
+                <input type="email" name="user-email" >
+                <input type="submit" value="subscribe">
+            </form>
+            <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt.</p>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="sectionHeader">
+                <h2>contact</h2>
+                <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt.</p>
+            </div>
+            <div class="content">
+                <form action="#" method="post">
+                    <input autocomplete="off" required class="main-input" type="text" name="name" placeholder="name">
+                    <input autocomplete="off" required class="main-input" type="email" placeholder="email">
+                    <div class="message">
+                    <textarea autocomplete="off" required class="main-input" maxlength="250" name="your message" placeholder="your message"></textarea>
+                    <span class="CharProgress"></span>  
+                    <span class="Charlimit"></span>
+                    </div>
+                    <button type="submit" class="submitBtn">
+                        <span>send message</span>
+                    </button>
+                </form>
+                <div class="info">
+                    <div >
+                        <h4>get in touch</h4>
+                        <span>+970 595036555</span>
+                        <span>+970 598154860</span>
+                    </div>
+                    <div>
+                        <h4>where we are ?</h4>
+                        <address>
+                            arraba jenin <br>
+                            palestine west bank <br>
+                            +123456789 <br>
+                            middle-east
+                        </address>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <img src="./images/logo.png" alt="logo in the footer">
+            <p>we are social</p>
+            <div class="social-icons">
+                <i class="fab fa-facebook fa-2x"></i>
+                <i class="fab fa-instagram fa-2x"></i>
+                <i class="fab fa-github fa-2x"></i>
+                <i class="fab fa-linkedin fa-2x"></i>
+            </div>
+            <p class="copyright">
+                &copy; &nbsp;2024 <span>dhedy-design</span> , all right reserved
+            </p>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
